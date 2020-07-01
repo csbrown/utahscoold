@@ -169,7 +169,7 @@ public class ScooldRequestInterceptor extends HandlerInterceptorAdapter {
 		modelAndView.addObject("navbarFixedClass", Config.getConfigBoolean("fixed_nav", false) ? "navbar-fixed" : "none");
 		modelAndView.addObject("showBranding", Config.getConfigBoolean("show_branding", true));
 		modelAndView.addObject("logoUrl", Config.getConfigParam("logo_url", IMAGESLINK + "/logo.png"));
-		modelAndView.addObject("logoWidth", Config.getConfigInt("logo_width", 90));
+		modelAndView.addObject("logoWidth", Config.getConfigInt("logo_width", 120));
 		modelAndView.addObject("stylesheetUrl", Config.getConfigParam("stylesheet_url", STYLESLINK + "/style.css"));
 		modelAndView.addObject("faviconUrl", Config.getConfigParam("favicon_url", IMAGESLINK + "/favicon.ico"));
 		modelAndView.addObject("inlineUserCSS", utils.getInlineCSS());
