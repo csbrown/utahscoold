@@ -16,7 +16,7 @@ USER scoold
 WORKDIR /scoold
 
 #RUN git clone --depth=1 https://github.com/Erudika/scoold /scoold/clone && \
-RUN git clone --depth=1 . /scoold/clone && \
+RUN git clone --depth=1 https://github.com/csbrown/utahscoold.git /scoold/clone && \
 	cd /scoold/clone && \
 	mvn -DskipTests=true clean package && \
 	mv target/scoold-*.jar /scoold/ && \
